@@ -30,7 +30,7 @@ public class ProducerWithKeys {
 
         for (int i = 0; i < 50; i++) {
             //init record
-            String topic = "second-topic";
+            String topic = "first-topic";
             String value = "hello world" + i;
             String key = " key_" + i;
             ProducerRecord<String, String> record = new ProducerRecord<>(topic, key, value);
